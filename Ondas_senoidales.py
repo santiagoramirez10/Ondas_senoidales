@@ -70,8 +70,8 @@ def grafasor1(a,b,d):#funcion para graficar donde a es el tiempo(mismo para amba
     plt.xlabel("tiempo (seg)")
     plt.ylabel("A*sen(wt+fi) (V)")
     plt.plot(t,A,"r")#se imprime el desfase
-    plt.title("Señales senoidales")#nombramos la señal
-    plt.legend(["Señal senoidal 1","Señal senoidal 2","Desfase ="+str(grados)],loc="lower right")
+    plt.title("Ondas senoidales")#nombramos la señal
+    plt.legend(["Onda senoidal 1","Onda senoidal 2","Desfase ="+str(grados)],loc="lower right")
     #en la linea anterior creamos la leyenda para los datos de la grafica
 
 amplitud=-4
@@ -83,7 +83,7 @@ a,b=fasor1(frecuencia,amplitud,fase,ciclos,muestreo)#a,b corresponden a ejex y e
 amplitud=5
 fase=-155
 c,d=fasor1(frecuencia,amplitud,fase,ciclos,muestreo)#c,d corresponden a ejex y ejey    
-grafasor1(a,b,d)#se grafican ambas señales, a es el tiempo, b y d son lo
+grafasor1(a,b,d)#se grafican ambas señales, a es el tiempo, b y d son loz
 
 print("el desfase es: "+str(desfase(b,d,frecuencia)))#imprime en pantalla el desfase entre las señales      
 #debido a la organizacion, la comentada y la introduccion con ejemplos incluidos,
